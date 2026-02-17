@@ -1,6 +1,6 @@
 'use client';
 
-import '@/styles/index.css';
+import './globals.css';
 import { Toaster } from '@/components/ui/sonner';
 
 export default function RootLayout({

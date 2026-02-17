@@ -126,8 +126,8 @@ export default function AdminDashboard() {
                   className="flex items-center justify-between p-4 border rounded-lg hover:bg-gray-50 transition-colors"
                 >
                   <div>
-                    <p className="font-semibold">{order.orderNumber}</p>
-                    <p className="text-sm text-gray-600">{order.customerName}</p>
+                    <p className="font-semibold">{order.order_number}</p>
+                    <p className="text-sm text-gray-600">{order.customer_name}</p>
                   </div>
                   <div className="text-left">
                     <p className="font-semibold">{order.total.toLocaleString('ar-IQ')} د.ع</p>

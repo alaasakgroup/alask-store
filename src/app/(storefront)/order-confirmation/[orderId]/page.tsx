@@ -45,11 +45,11 @@ export default function OrderConfirmationPage() {
         <div className="grid grid-cols-2 gap-4 mb-6">
           <div>
             <p className="text-sm text-gray-600 mb-1">رقم الطلب</p>
-            <p className="font-bold">{order.orderNumber}</p>
+            <p className="font-bold">{order.order_number}</p>
           </div>
           <div>
             <p className="text-sm text-gray-600 mb-1">التاريخ</p>
-            <p className="font-semibold">{formatDate(order.createdAt)}</p>
+            <p className="font-semibold">{formatDate(order.created_at)}</p>
           </div>
           <div>
             <p className="text-sm text-gray-600 mb-1">الحالة</p>
@@ -63,8 +63,8 @@ export default function OrderConfirmationPage() {
 
         <div className="border-t pt-4">
           <p className="text-sm text-gray-600 mb-1">معلومات التوصيل</p>
-          <p className="font-semibold">{order.customerName}</p>
-          <p className="text-sm">{order.customerPhone}</p>
+          <p className="font-semibold">{order.customer_name}</p>
+          <p className="text-sm">{order.customer_phone}</p>
           <p className="text-sm">{order.province} - {order.address}</p>
           {order.note && (
             <p className="text-sm text-gray-600 mt-2">ملاحظة: {order.note}</p>
